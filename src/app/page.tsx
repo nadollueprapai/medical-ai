@@ -27,17 +27,17 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-[#F6F8FB]">
+    <main className="min-h-screen bg-[var(--bg-light)]">
 
       {/* Navigation */}
 
-      <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
+      <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg)]/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
 
           <div className="flex items-center gap-3">
 
             <Activity
-              className="text-[#0B5E92]"
+              className="text-[var(--primary-dark)]"
               size={30}
             />
 
@@ -54,7 +54,7 @@ export default function Home() {
 
       <section className="flex min-h-[calc(100vh-80px)] items-center justify-center pb-20">
 
-        <div className="mx-auto max-w-5xl rounded-[28px] border border-slate-200 bg-white p-10 shadow-sm">
+        <div className="mx-auto max-w-5xl rounded-[28px] border border-[var(--border)] bg-[var(--bg)] p-10 shadow-sm">
 
           <h2 className="mb-6 text-2xl font-semibold">
 
@@ -66,18 +66,18 @@ export default function Home() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Describe your symptoms..."
-            className="h-48 w-full rounded-2xl border border-slate-300 bg-slate-50 p-5 text-lg outline-none transition focus:border-[#0B5E92]"
+            className="h-48 w-full rounded-2xl border border-[var(--border)] bg-[var(--bg-light)] p-5 text-lg outline-none transition focus:border-[var(--primary-dark)]"
           />
 
           <button
             onClick={send}
-            className="mt-6 rounded-full bg-[#0B5E92] px-8 py-4 text-white transition hover:bg-[#084A73]"
+            className="mt-6 rounded-full bg-[var(--primary-dark)] px-8 py-4 text-white transition hover:bg-[var(--primary)]"
           >
             {loading ? "Thinking..." : "Ask AI"}
           </button>
 
           {reply && (
-            <div className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-6 whitespace-pre-wrap">
+            <div className="mt-8 rounded-2xl border border-[var(--border)] bg-[var(--bg-light)] p-6 whitespace-pre-wrap">
               {reply}
             </div>
           )}
