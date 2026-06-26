@@ -6,6 +6,11 @@ An AI-powered medical guidance web application built with Next.js and Groq AI.
 
 ---
 
+###### DEVELOPER INSTRUCTIONS
+##### SCROLL TO COMMANDS TO VIEW DEVELOPER ACTIONS
+
+---
+
 # Folder Structure
 
 ## /public
