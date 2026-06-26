@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Medical AI Project
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+An AI-powered medical guidance web application built with Next.js and Groq AI.
 
-```bash
+---
+
+# Folder Structure
+
+## /public
+Stores images, logos, icons, and other static files.
+
+## /src
+Contains all application source code.
+
+---
+
+# /src/app
+
+## page.tsx
+The main homepage users see.
+
+## layout.tsx
+Defines the global layout shared across every page.
+
+## globals.css
+Contains global colors, fonts, and styling.
+
+## /api/chat/route.ts
+Receives chat messages and sends them to the AI.
+
+---
+
+# /src/components
+
+Contains reusable UI components.
+
+Example components:
+- Navbar.tsx — Top navigation bar.
+- Hero.tsx — Landing page hero section.
+- ChatWindow.tsx — Main AI chat interface.
+- MessageBubble.tsx — Individual chat messages.
+- Footer.tsx — Website footer.
+- FeatureCard.tsx — Reusable feature cards.
+
+---
+
+# /src/lib
+
+## groq.ts
+Initializes the Groq AI client.
+
+---
+
+# /src/hooks
+
+Stores reusable React hooks.
+
+---
+
+# /src/utils
+
+Stores helper functions used throughout the app.
+
+---
+
+# /src/types
+
+Stores shared TypeScript interfaces and types.
+
+---
+
+# Root Files
+
+## .env.local
+Stores secret API keys and environment variables.
+
+## package.json
+Lists project dependencies and npm commands.
+
+## package-lock.json
+Locks dependency versions for consistent installs.
+
+## tsconfig.json
+Configures TypeScript.
+
+## next.config.ts
+Configures Next.js.
+
+## eslint.config.mjs
+Configures code linting.
+
+## README.md
+Project documentation.
+
+---
+
+# npm Commands
+
+npm install
+Installs project dependencies.
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Starts the development server.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+npm run build
+Creates a production build.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm start
+Runs the production build locally.
