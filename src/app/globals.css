@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
-:root {
-  --primary: #00588F;
-  --secondary: #C06428;
+:root{
+  --primary:#00588F;
+  --primary-dark:#004976;
 
-  --background: #EAEFF3;
-  --surface: #FFFFFF;
+  --accent:#C06428;
 
-  --text: #2E3644;
-  --text-muted: #696969;
+  --bg:#FFFFFF;
+  --bg-light:#E8ECF1;
 
-  --border: #D9E1EA;
+  --text:#1C2F47;
+  --text-light:#9299A0;
 
-  --teal: #A2D4CC;
-  --teal-hover: #7FC4B9;
+  --border:#D8D8D8;
+
+  --pill:#D9E1EA;
 }
 
 html {

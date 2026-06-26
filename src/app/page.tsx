@@ -47,74 +47,12 @@ export default function Home() {
 
           </div>
 
-          <button className="rounded-full bg-[#0B5E92] px-6 py-3 text-white transition hover:bg-[#084A73]">
-            Start Assessment
-          </button>
-
         </div>
       </nav>
 
-      {/* Hero */}
-
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#F8FBFD] via-white to-[#EAF5FA]">
-
-        <div className="absolute right-[-120px] top-[-80px] h-[500px] w-[500px] rounded-full bg-[#CFE9F4] blur-3xl opacity-60" />
-
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-10 py-28">
-
-          <div className="max-w-2xl">
-
-            <span className="rounded-full bg-[#DDEFF8] px-5 py-2 text-sm font-medium text-[#0B5E92]">
-              AI Health Guidance
-            </span>
-
-            <h1 className="mt-8 text-6xl font-bold leading-tight text-slate-900">
-
-              Understand your symptoms with AI
-
-            </h1>
-
-            <p className="mt-8 max-w-xl text-xl leading-9 text-slate-600">
-
-              Receive educational health guidance through a conversational AI
-              assistant that asks follow-up questions and helps you understand
-              possible next steps.
-
-            </p>
-
-            <div className="mt-10 flex gap-4">
-
-              <button className="rounded-full bg-[#0B5E92] px-8 py-4 text-white transition hover:bg-[#084A73]">
-
-                Start Assessment
-
-              </button>
-
-              <button className="flex items-center gap-2 rounded-full border border-slate-300 bg-white px-8 py-4 hover:bg-slate-50">
-
-                Learn More
-
-                <ArrowRight size={18} />
-
-              </button>
-
-            </div>
-
-          </div>
-
-          <div className="hidden lg:block">
-
-            <div className="h-[430px] w-[430px] rounded-full bg-gradient-to-br from-[#BEE3F3] via-[#69B9DD] to-[#0B5E92] opacity-90 shadow-2xl" />
-
-          </div>
-
-        </div>
-
-      </section>
-
       {/* Chat */}
 
-      <section className="-mt-12 pb-20">
+      <section className="flex min-h-[calc(100vh-80px)] items-center justify-center pb-20">
 
         <div className="mx-auto max-w-5xl rounded-[28px] border border-slate-200 bg-white p-10 shadow-sm">
 
