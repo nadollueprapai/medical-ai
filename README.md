@@ -107,7 +107,7 @@ npm install
 Installs project dependencies.
 
 npm run dev
-Starts the development server.
+Starts the development server. (AND RUNS THE PROJECT)
 
 npm run build
 Creates a production build.
